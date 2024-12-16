@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - معهد عين الشمس العالي</title>
+    <link rel="icon" href="~/img/logo1.png"/>
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap icons (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Spinkit (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/1.2.5/spinkit.min.css">
+    <!-- animate (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- إضافة خط Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <!--font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* <link rel="stylesheet" href="/css/styles.css" asp-append-version="true" /> *@
+  @*   <link rel="stylesheet" href="~/Ainshmes.styles.css" asp-append-version="true" /> *@
+    <!-- Core theme CSS-->
+    <link href="/css/styles.css" rel="stylesheet" />
+      <!-- مكتبة aos للحركات CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- TOP HEAD -->
+        <div class="topbar">
+            <div class="row">
+                <div class="col-md-8 tp-right">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:contact@example.com"><i class="fas fa-envelope m-md-1"></i></a>
+                    <a href="#"><span>092-2108855</span><i class="fas fa-phone m-md-1"></i></a>
+                </div>
+                <div class="col-md-4 tp-left text-start">
+                    <a href="#"><i class="bi bi-person"></i></a>
+                    <a href="#"><i class="bi bi-box-arrow-in-right"></i></a>
+                    <a href="#"><i class="bi bi-box-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVEGATION -->
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    @* <img src="/img/logo1.png" alt="Logo" class="rounded-circle" width="50" height="50"> *@
+                        <svg version="1.1" viewBox="0 0 2048 1700" width="100" height="50" xmlns="http://www.w3.org/2000/svg">
+                    <path transform="translate(983,183)" d="m0 0h82l16 2 36 2 8 2 22 2 27 6 15 3 32 8 15 4 38 12 19 7 13 5 24 10 19 9 22 11 38 20 33 21 11 8 12 8 13 10 14 10 13 11 11 9 7 7 2 1v2l4 2 14 12 5 5 7 6 5 6 6 5 14 16 5 5 11 12 7 8 10 13 9 6 12 7 18 11 16 10 20 14 15 10 13 10 9 7 14 10 14 12 11 9 12 11 8 7 10 9 39 39 7 8 12 13 9 11 9 10 9 11 14 18 10 13 13 18 11 16 18 27 14 23 6 10 15 26 12 23 17 33 13 28 13 29 5 12-1 3-10-13-8-10-12-14-7-8-26-26-8-7-10-8-9-7-16-11-15-9-27-14-28-10-30-7-26-3h-29l-5 1 7 52 2 42v48l-2 42-6 44-2 15-5 26-5 24-8 30-9 30-11 30-12 31-9 19-5 12-12 24-10 17-7 13-8 13-4 7-5 8-6 10-4 5-7 10-3 3-3 6-8 9-5 8-14 18-5 6-5 5-8 10-9 9-7 8-7 7-6 8-5 3-7 8-12 11-13 12-9 8-5 5-9 7-10 8-15 11-9 7-13 9-8 6-10 7-14 8-8 5-10 6-13 8-14 8-32 16-21 9-19 8-23 9-38 13-14 4-43 11-62 11-27 3-15 1-31 1h-63l-44-2-35-4-59-11-49-13-36-12-16-6-11-5-12-4-12-6-17-7-6-4-12-5-9-6-10-4-8-4-5-4-11-6-13-8-5-4-12-6-8-6-9-6-12-9-15-11-14-10-8-8-12-9-7-7-5-4-5-5-8-7-9-9-6-5-6-7-5-4-5-7-6-5-7-8-1-3h-2l-7-8-6-7-5-7-10-7-20-11-14-8-18-12-13-8-14-10-20-14-18-14-13-11-16-13-8-7-10-9-8-7-9-9-8-7-23-23-7-8-7-7-7-8-11-12-14-17-9-11-11-14-8-10-10-14-11-15-7-11-11-16-14-22-12-20-15-26-15-28-15-30-15-33-13-30-3-6 1-2 8 10 11 14 9 10 8 10 30 30 11 9 12 10 10 7 19 12 18 10 24 10 23 7 9 3 21 3 13 1 8 1h27l9-1v-8l-2-10-3-31-3-44v-50l2-23 2-30 2-21 4-20 3-23 9-39 6-23 7-23 7-21 9-25 11-27 18-38 18-35 6-7 6-12 6-9 6-10 10-14 6-9 8-11 15-20 14-18 8-9 4-5 5-5 9-11 45-45 12-9 17-16 13-10 11-9 19-13 30-21 11-7 12-7 13-8 16-9 10-4 10-6 14-6 16-8 18-8 13-5 14-6 10-3 13-5 25-7 12-4 17-4 10-2 19-5 14-2 16-4 15-2 12-1 8-2 36-2z" fill="#1A191A" />
+                    <path transform="translate(1614,906)" d="m0 0 2 1-12 29-10 24-16 33-9 19-7 14-6 10-6 12-10 19-7 10-6 10-8 14-5 8-3 5-4 5-3 6-5 6-6 9-3 6-12 13-3 6-10 13-7 9-4 4-7 10-6 7-6 8-4 5-6 5-7 8-7 7-9 11-12 13-11 11-8 7-11 10-8 7-10 10-11 9-10 8-8 7-7 4-7 7-9 7-6 4-13 9-9 6-17 11-22 14-24 14-16 9-21 10-15 8-18 7-15 7-10 5-18 6-15 6-26 8-9 3-21 5-16 5-59 12-44 6-13 2-35 1-17 1-3 1h-30l-6-1-48-2-57-8-60-12-37-10-43-14-31-12-18-8-10-5-11-4-32-16-5-2-10-7-17-9-14-8-18-12-13-8-14-10-20-14-18-14-13-11-16-13-8-7-10-9-8-7-9-9-8-7-23-23-7-8-7-7-7-8-11-12-14-17-9-11-11-14-8-10-10-14-11-15-7-11-11-16-14-22-12-20-15-26-15-28-15-30-15-33-13-30-3-6 1-2 8 10 11 14 9 10 8 10 30 30 11 9 12 10 10 7 19 12 18 10 24 10 23 7 9 3 21 3 13 1 8 1h27l9-1 2-3v3l15-1 18-3 19-5 18-5 19-7 11-4 6-2 9-5 13-5 16-8 4 1 5 7 6 4 4 7 6 3 5 8 8 5 10 10 1 3 6 4 9 9 8 7 14 11 12 11 10 7 16 12 10 7 17 12 11 7 14 9 13 8 17 9 14 8 36 18 8 3 9 5 17 6 11 5 33 11 25 7 11 4 24 5 32 7 16 2 17 3 8 2 39 2 14 2h55l16-2 37-2 27-5 25-4 16-4 17-3 9-2 17-5 21-6 13-4 15-5 27-10 15-6 8-4 17-8 15-6 5-4 17-7 6-5 16-8 20-11 11-8 16-10 5-4 14-9 11-8 8-6 5-4 5-3 13-12 7-4 12-12 14-11 12-11 51-51 9-11 12-14 7-7 3-6h2l2-4 14-18 7-8 7-10 6-7 3-6z" fill="#D6B36E" />
+                    <path transform="translate(1201,366)" d="m0 0h61l23 2 21 2 19 3 19 1 7 2 24 3 21 5 12 2 28 7 26 8 27 8 12 5 27 10 15 6 20 9 25 12 14 8 7 3 4 3 7 3 11 6 26 16 15 10 13 9 12 8 10 7 13 10 12 9 9 7 11 9 14 12 10 9 8 7 10 9 39 39 7 8 12 13 9 11 9 10 9 11 14 18 10 13 13 18 11 16 18 27 14 23 6 10 15 26 12 23 17 33 13 28 13 29 5 12-1 3-10-13-8-10-12-14-7-8-26-26-8-7-10-8-9-7-16-11-15-9-27-14-28-10-30-7-26-3h-29l-18 2-20 3-12 2-15 5-12 3-16 5-19 8-13 5-9 4-16 9-5 1-4-2-9-11-10-10-5-6-8-7-10-9-8-7-13-12-9-9-16-12-6-5-2-3-5-2-11-9-9-6-5-5-6-3-4-4-8-4-5-4-9-6v-2l-6-1-6-6-6-2-2-2-7-3-5-4-7-3-12-6-5-3-6-4-4-3-7-2-3-2-6-2-8-4v-2l-7-1-15-7-12-5-7-2-16-7-17-5-20-7-24-7-44-10-32-5-44-6-10-1h-98l-51 7-21 3-17 3-22 5-23 5-18 6-13 4-20 7-10 3-13 5-20 8-12 5-9 3-9 6-14 5-10 6-9 5-2 2-10 4-11 6-20 12-9 6-14 9-8 5-3 3-6 3-16 12-14 10-5 5-6 3-10 9-13 10-3 1-2 4-13 12-7 6-5 1-2 5-12 11-26 26-7 8-5 2-1 6-13 13-3 6-5 2-3 6-12 14-4 6-11 12-3 6-6 7h-2l-2 6-7 8v-3l6-15 3-9 6-12 6-16 9-17 8-18 6-11 8-17 4-6 3-7 7-13 9-16 4-6 4-7 3-3 3-7 3-6 5-6 6-12 6-7 5-9 6-7 4-7 4-5h2l2-6 6-6 3-6 10-12 16-22 5-5 11-12 3-5 4-2 3-6h2l2-4 8-8 5-6 7-6 2-5 5-2 4-4 2-5 5-2 3-5 6-4 7-8 8-7 7-7 14-11 12-10 5-5 11-8 5-5 5-2 7-7 10-6 9-7 14-9 8-6 13-8 18-11 16-9 12-6 4-3 32-16 21-10 12-5 15-6 13-5 17-6 13-5 20-6 17-5 22-7 12-2 7-2 16-3 17-4 18-2 11-2 22-2 13-2 20-2z" fill="#D6B36E" />
+                    <path transform="translate(872,779)" d="m0 0 10 1 7 2 5 5 6 9 1 5v9l-5 12-7 4-6 4v2l86 86h3l1-2 5-2 3-5 6-5 3-3 7-8 30-30 4-1 2-5 6-5 3-2 3-5 14-14 1-2 4 1 24 24-1 5-8 7-7 8-4 4h-2l-2 4h-2l-2 4-3 3h-2l-2 4h-2l-2 4h-2l-2 4-5 4-5 6-8 7-7 8-6 5-6 7-8 7-1 3 60 60h2l8-10 8-7 161-161 4 1 6 5 5 5 7 8 4 4 1 6-4 4-6 4-4 7-6 3-3 5-4 4-6 4-8 8-3 6-6 3-3 4-2 4-6 3-3 4-2 4-8 5-3 6-8 5-8 8-3 6-6 3-3 4-3 5-6 1-2 4-2 5-8 5-4 7-6 3-6 6h-2l-2 4-2 5-8 5-4 7-6 3-3 4-2 4-6 3-3 1-1 6-8 5-9 9-3 6-1 1h-6l-4-4-1-4-5-1-5-8-7-4-3-6-4-3-4-2-1-5-5-1-6-7-1-3-6-3-4-5-1-4-5-1-5-8-7-4-5-8-6-3-1-3-8 7-80 80-4-1-203-203 1-5 11-12 9-9h2l1-4h2l1 4 6 2 5 6 2 3 5 3 2 4 6 4 4 7 8 7 3 3v2l4 2 12 12 6 5 7 8 74 74 2 4 4 2 5 5 2 4 4 2 8 7 7 8v2h5l4-6 34-34 4-2 3-5 6-5 2-1 4-7-1-4-5-5-4-2-5-8-6-3-2-6-5-1-6-7v-3l-5-1-6-7-1-3-5-2-5-8-6-3-5-8-7-4-1-5-5-1-6-7-1-6 4-5 3-5 4-2 3-5 5-3v-3l-9-2-8-5-5-6-3-7v-13l4-8 5-6 4-3z" fill="#FCFBF9" />
+                    <path transform="translate(1037,4)" d="m0 0 15 2 49 2 10 2 28 1 9 2 8 5 2 2v9l-6 16-1 7h10l13 2 6 1 1-27 7-6 3-1 15 1 9 1 16 5 16 3 19 4 12 5 4 3v6l-7 10-7 6-3 5-2 4 10 2 16 6 3-1 9-15 7-8 6-5 4-1 42 13 15 6 12 6 3 4v9l-13 22-6 7-5 4h-16l-29-10-12-5-2-3v-4l-4 4-7-1-21-7-37-10-60-11-35-4-44-3-11-1-65-2h-17l-66 2-27 3-1-1v-17l5-3 21-2 17-2 24-2v-18l-25 3-13 1h-17l2-10 1-8 1-1 17-1 16-2 23-1h15l5 2 4 10-2 5v20h17l4-7 6-23 3-9zm21 20-4 14v6l2 1h17l3-6 3-13-15-2zm49 5-1 1-2 10-2 4 1 4 16 1 5-5 3-11v-3l-11-1zm103 13-3 7v10l3 3 18 5h5l5-3 5-4 2-5v-5l-2-2-20-4zm118 32-6 10-4 5 2 4 25 8h6l6-9 1-7-5-3-18-6z" fill="#1A191A" />
+                    <path transform="translate(559,127)" d="m0 0h3l4 11 7 14 6 16v10l-3 5-6 7-6 4-13 11-12 1-4 8-6 6-5 2-11 9-14 7-10 11-6 3-12 11-7 6-6 4-3 1v2l-8 7-12 12-4 1-3 6-8 1-3 6-9 11-8 7-3 3h-2v2l-6 4-11 5-2 8-7 12-8 9-4 6-7 3h-3l-2 11-8 11-8 9-4 7 3 5 2 7-1 9-6 12-9 11-8 10-10 13-11 14-3 3-5-2-11-13-9-11-8-10-11-12-7-9 1-4 14-16 4-2 10 13 8 9 9 11 8 9h3l2-4 10-12 5-7-1-4-10-12-7-8-11-13-7-9 2-4 15-18 5 4 10 13 12 12 2-5 8-9-1-3-5-5-13-17-5-4 1-5 12-14 5-5 11 14 8 9v2l7 1 8-9 1-5-16-20-7-7 1-4 13-16 1-2 5 1 9 10 9 12 3 3 4-1 11-8 4-2 2-6-9-17-5-8v-6l7-11 11-12 14-14 6-5 5-5 9-6 4-3 7 1 8 8 8 14 8-1 5-3 4-4-3-12-8-17-2-3 1-5 8-7 12-8 4 6 4 8 3 9 4 9 1 1 7-1 7-7v-8l-7-14-4-13 2-5 6-4 7-4 5-5h2l3 9 5 7 6 16 4 1 9-6 3-4-1-6-6-12-5-14-1-4 8-7 6-3zm-134 123-8 7-13 12-1 5 4 7 5 6 4-1 5-4 7-6 10-10-2-4-5-7-2-5z" fill="#1B1A1A" />
+                    <path transform="translate(1268,803)" d="m0 0 5 1 2 5 8 5 3 5v2l4 2 7 7v2l4 2 7 7v2l4 2 9 10 5-1 22-22 2-3 4 2 3 3v2l4 2 7 7 7 8 1 5-40 40-3 5-6 4-5 5h-2l-1 3-36 36-2 5-6 3-99 99-5 2v-50l6-8 10-9 7-8 8-7 21-21 8-9h2l2-4 8-7 6-7 8-7 46-46v-2l-5-2-4-6-8-7-5-7-5-2-2-6-5-2-6-8-7-5-4-6-1-3 7-8 3-3h2l2-4h2z" fill="#FBFAF8" />
+                    <path transform="translate(863,19)" d="m0 0 4 1 1 17-6 3-31 6-18 5-1 1-1 19 17-4 16-4 14-3 10-1 2 2v16l-24 6-29 7-30 7-15 4-8 3-9 1-3-3-1 5-19 8-16 5-12 4h-2v19l-14 10-23 11-11 4-21 10-8 1-1-2-1-11-3-7-3-11-3-17-4-15-1-2v-8l9-6 15-7 2 2 2 9 2 7 2 13 5 16 1 9 15-6 14-7-1-12-6-22-1-11-3-8 1-5 10-4 11-5 3-1 1 1 2 12 7 23 8-1 10-5 10-3v-14l-2-14-1-10 12-5 7-2 5-2 2 2 3 12 1 10v14l23-7 6-2 1-31 5-5 8-7 17-4 15-3 20-5 10-2z" fill="#1B191A" />
+                    <path transform="translate(172,523)" d="m0 0 4 1 13 9 13 10 14 10 10 9 3 4v8l-4 13-9 25-8 21-9 27-5 14-11 31-4 12-4 17-6 9-1 1h-9l-13-5-17-8-25-11-2-4 4-13 2-11 5 1 21 9 16 8 10 4 3-15 4-12-26-5-6-4-1-1v-11l4-13 12-35 5-15 7-17 4-3 8 2 14 15 5 5 4-4 8-18-1-4-10-7-17-13-14-10-2-3 8-16zm-3 97-7 20-4 12v4l12 3h5l4-5 6-18-9-13-3-3z" fill="#1C1A1A" />
+                    <path transform="translate(98,735)" d="m0 0 6 2 25 10 28 12 5 5 2 8-1 20-4 27-3 17-7-1-24-7-8-2v20l9 2 26 8 1 1v14l-3 40-2 13-5 10-1 1h-7l-21-5-22-7v-27l2-1 28 8 9 2 1-12 2-14-10-2-20-7-4-5-3-8v-11l2-20 1-27 2-7 38 10 2 1 1-19-10-5-35-14-5-3 1-8z" fill="#1C1B1B" />
+                    <path transform="translate(1049,1064)" d="m0 0h18l8 2 10 5 10 8v10l-6 7-9 6-11 1-5 2h-9l-9-2-10-1-6-6-5-2-4-10 4-8 6-5 12-6z" fill="#FBF9F6" />
+                    <path transform="translate(193,483)" d="m0 0 5 2 11 9 13 10 15 12 14 11 2 3-12 22h-4l-16-13-13-10-16-13-11-8 1-4z" fill="#1C1B1B" />
+                    <path transform="translate(524,124)" d="m0 0 4 1 3 9v7l-13 11-5 2h-4l-5-10 1-5 6-5 7-4z" fill="#1B1A1A" />
+                    <path transform="translate(740,117)" d="m0 0h4v16l-8 4-11 3-7 1-4-11 2-4 6-3 13-4z" fill="#1C1B1B" />
+                    <path transform="translate(159,859)" d="m0 0 12 2 4 1v27l-5 1-12-3v-19z" fill="#26221F" />
+                    <path transform="translate(157,893)" d="m0 0 15 3 1 1-1 16-2 11-7-1-9-3 2-20z" fill="#201E1C" />
+                    <path transform="translate(501,113)" d="m0 0h3l4 10 1 6-11 9-9 5h-3l-4-8v-7l7-5 5-3 5-5h2z" fill="#1A191A" />
+                    <path transform="translate(654,59)" d="m0 0 3 1 3 10 1 4-8 5-13 6h-4l-4-11v-3l8-6 11-4z" fill="#1B1A1A" />
+                    <path transform="translate(495,145)" d="m0 0 5 1 4 9v5l-11 8-7 5-1 2-4-2-3-7v-7l5-5 6-3z" fill="#1A191A" />
+                    <path transform="translate(771,107)" d="m0 0 2 1 4 11v3l-8 4-16 5h-2l-3-8v-7l4-3 16-5z" fill="#1C1A1A" />
+                </svg>
+                </a>
+
+                <!-- زر القائمة للموبايل -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About1">عـن الـمعـهد</a>
+                        </li>
+                        <!-- قائمة منسدلة  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               البرامـج العلميـة
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="IT_Section">تقنية المعلومات</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">إدارة الاعمال</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">محاسبة</a></li>
+                            </ul>
+                        </li>
+                        <!-- قائمة منسدلة  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Home" asp-action="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                المـكاتـب
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action=""> مكتب التسجيل والقبول</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">مكتب خدمة المجتمع والبيئة</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">مكتب البحث العلمي</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">مكتب الأمن والسلامة</a></li>
+                            </ul>
+                        </li>
+                        <!-- قائمة منسدلة  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Home" asp-action="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              الدراسة والأمتحـانات
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Graduates"> قوائم الخريجين</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Acadimyy">الجداول والتقويمات</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Evidence">الكتيبات والادلة</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">المكتبة الرقمية</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesFinel"> جـداول الامتحانات النهائية</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesStudy">الجداول الدراسية</a></li>
+                            
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="">الأخـبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">تـواصـل معنا</a>
+                        </li>
+                    </ul>
+                </div>
+
+              
+            </div>
+            <!-- @*  <partial name="_LoginPartial" /> *@-->
+        </nav>
+    </header>
+    <div class="con">
+        <main role="main" class="pb-3">
+         @*     <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div> *@ 
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div id="footbg">
+            <div class="container">
+                <div class="footer-content">
+
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <div class="footer-section about text-center">
+                                <h2>معـهد عـيـن الشـمـس</h2>
+                                <p>
+                                    نحن نقدم محتوى تقني وتعليمي عالي الجودة تابعنا على وسائل التواصل الاجتماعي!
+                                </p>
+                                <div class="social-media">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="footer-section links text-center">
+                                <h2>روابط سريعة</h2>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">عن المـعهد</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">البرامـج العـلمية</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Deparement">الدراسة والأمتـحانات</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Doctor">الـمكاتـب</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">تواصـل معنا </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="footer-section contact">
+                                <h2>اتصل بنا</h2>
+                                <p><i class="fas fa-map-marker-alt m-md-1"></i> طرابلس - صلاح الدين - خلف جامعة طرابلس </p>
+                                <p><i class="fas fa-phone m-md-1"></i> 092-2108855 </p>
+                                <p><i class="fas fa-envelope m-md-1"></i> info@ainshams.edu.ly </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footbg_botton">
+            <div class="footer-bottom">
+                &copy;  <a href="#"> 2024 جميع الحقوق محفوظة | موقعك الإلكتروني</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scroll Top -->
+    <a href="#" class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
+
+   
+    <!-- إضافة Bootstrap JavaScript و Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybAujxIukBj7ITJGEFb4FJWYaIo6J9o/qgpgl5uCpQQ7RI+Av" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-QFf2pA8ANJmP4BIsccsdh5aZpAkFdMPHSt6mp13ZkljKSWiYDsq+jNi0e48F6qJ8" crossorigin="anonymous"></script>
+    <!-- مكتبة aos للحركات JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- مكتبة النص للحركات JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

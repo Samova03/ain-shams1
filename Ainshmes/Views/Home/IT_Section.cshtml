@@ -1,0 +1,346 @@
+﻿
+<html lang="ar" dir="rtl">
+<head>
+    <style>
+
+        .carousel {
+            height: 100vh; /* 100% من ارتفاع الشاشة */
+        }
+
+        .carousel-item {
+            height: 100vh; /* 100% من ارتفاع الشاشة */
+        }
+
+            .carousel-item img {
+                height: 100vh; /* تعديل حجم الصورة لتناسب ارتفاع السلايد */
+                object-fit: cover; /* لضبط الصورة بحيث تملأ السلايد بدون تمدد غير مناسب */
+                margin: 0;
+                padding: 0;
+            }
+
+        .carousel {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+        .carousel-item img {
+            width: 100%;
+            height: 70vh; /* تعديل ارتفاع الصورة */
+            object-fit: cover; /* يحافظ على تناسب الصورة */
+        }
+
+        .section-title {
+            /* font-size: 24px; */
+            /* font-weight: bold; */
+            text-align: center;
+            color: #8b5e34;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .svg-icon-container {
+            margin: 20px 0;
+            text-align: center; /* لجعل الأيقونة في المنتصف */
+        }
+
+        .section-content {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 18px; /* يمكنك تعديل الحجم حسب رغبتك */
+            line-height: 1.6; /* لتعديل المسافة بين الأسطر */
+            text-align: justify; /* لضبط النص بحيث يكون متناسقًا على اليمين واليسار */
+
+            background-color: #f8f6eb; /* اللون الخلفي */
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 800px;
+            color: #333;
+        }
+
+
+
+
+
+
+
+        /* تصميم الجداول */
+        .custom-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: #ffffff; /* خلفية بيضاء للجدول */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+            /* تصميم الـ th */
+            .custom-table thead th {
+                background-color: #C4A76A; /* لون رؤوس الأعمدة */
+                color: white;
+                padding: 15px;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            /* تصميم الـ td */
+            .custom-table tbody td {
+                padding: 12px;
+                background-color: #ffffff; /* خلفية بيضاء للخلايا */
+                color: #333;
+                border-bottom: 1px solid #ddd;
+                transition: background-color 0.3s ease;
+            }
+
+            /* التأثير عند تمرير الفأرة */
+            .custom-table tbody tr:hover td {
+                background-color: #f1f1f1;
+            }
+
+            /* إزالة آخر حدود السطر */
+            .custom-table tbody tr:last-child td {
+                border-bottom: none;
+            }
+
+        /* تصميم الأيقونات */
+        .icon-link {
+            margin: 0 5px;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        /* تأثير عند التمرير على الأيقونة */
+        .icon-link:hover .icon {
+            transform: scale(1.1); /* تكبير الأيقونة قليلاً عند التمرير */
+        }
+
+    </style>
+    <link href="~/css/css3.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/IT_Section1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>تخصص تقنية المعلومات </h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/IT_Section2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/IT_Section3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="text-center mb-5 mt-5">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>قسم تقنية المعلومات  </h2>
+                <img src="img/imgdividor.svg" alt="Description of SVG">
+            </div>
+
+
+        </div>
+
+        <div class="section-content">
+            يُعَدُّ قسم تقنية المعلومات من الأقسام الحيوية في معهد عين شمس العالي، حيث يهدف إلى تزويد الطلاب بالمعرفة والمهارات اللازمة لمواجهة التحديات التقنية في عالم سريع التطور. يقدم القسم برامج دراسية متكاملة تشمل مجالات الحوسبة، البرمجة، الشبكات، وأمن المعلومات.
+            يستفيد الطلاب من مناهج دراسية حديثة تعتمد على أحدث التقنيات والأدوات، بالإضافة إلى فرص التدريب العملي والمشاريع البحثية. كما يتيح القسم للطلاب تطوير مهاراتهم في حل المشكلات وتحليل البيانات، مما يؤهلهم للعمل في مجموعة متنوعة من الصناعات.
+            يسعى قسم تقنية المعلومات إلى إعداد خريجين متميزين قادرين على الابتكار والمساهمة في تعزيز التحول الرقمي في المؤسسات المحلية والدولية.
+        </div>
+    </div>
+    <div class="text-center mb-5 mt-5">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>المواد الدراسية</h2>
+            <img src="" alt="Description of SVG">
+        </div>
+
+
+    </div>
+
+    <div class="container mt-4">
+        <div class="table-responsive">
+            <table class="table custom-table text-center">
+                <thead>
+                    <tr>
+                        <th>ت</th>
+                        <th>رقم المقرر</th>
+                        <th>اسم المقرر</th>
+                        <th>الوحدات</th>
+                        <th>الإجراءات</th> <!-- عمود جديد للإجراءات -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CS101</td>
+                        <td>مقدمة في البرمجة</td>
+                        <td>3</td>
+                        <td>
+                            <!-- استبدال الزر بأيقونة العرض -->
+                            <a href="#" class="icon-link">
+                                <img src="~/img/view icon.png" alt="عرض المواد" class="icon">
+                            </a>
+                            <!-- استبدال الزر بأيقونة التنزيل -->
+                            <a href="#" class="icon-link">
+                                <img src="~/img/PDF icon.png" alt="تنزيل المواد" class="icon">
+                            </a>
+                        </td> <!-- عمود الأزرار -->
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>IT202</td>
+                        <td>نظم المعلومات</td>
+                        <td>4</td>
+                        <td>
+                            <a href="#" class="icon-link">
+                                <img src="~/img/view icon.png" alt="عرض المواد" class="icon">
+                            </a>
+                            <a href="#" class="icon-link">
+                                <img src="~/img/PDF icon.png" alt="تنزيل المواد" class="icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>BA303</td>
+                        <td>إدارة الأعمال</td>
+                        <td>3</td>
+                        <td>
+                            <a href="#" class="icon-link">
+                                <img src="~/img/view icon.png" alt="عرض المواد" class="icon">
+                            </a>
+                            <a href="#" class="icon-link">
+                                <img src="~/img/PDF icon.png" alt="تنزيل المواد" class="icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>ACC404</td>
+                        <td>المحاسبة المالية</td>
+                        <td>3</td>
+                        <td>
+                            <a href="#" class="icon-link">
+                                <img src="~/img/view icon.png" alt="عرض المواد" class="icon">
+                            </a>
+                            <a href="#" class="icon-link">
+                                <img src="~/img/PDF icon.png" alt="تنزيل المواد" class="icon">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Team Start -->
+    <div class="container-fluid team pb-5">
+        <div class="container pb-5">
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">عياد الكوني </h4>
+                            <p class="mb-0">دكتور تقنية معلومات</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">عياد الكوني </h4>
+                            <p class="mb-0">دكتور تقنية معلومات</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div><div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">عياد الكوني </h4>
+                            <p class="mb-0">دكتور تقنية معلومات</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div><div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">عياد الكوني </h4>
+                            <p class="mb-0">دكتور تقنية معلومات</p>
+                        </div>
+                        <div class="team-icon">
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn  btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+</html>
